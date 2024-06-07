@@ -4,73 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATS University Raipur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        section:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .hero {
+            background-image: url('https://images.app.goo.gl/4p8YjnsVQqnqPFbG9');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h3 {
+            color: #004d99;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header style="text-align: center; background-color: #4CAF50; padding: 20px;">
-        <h1>Welcome to MATS University Raipur</h1>
-        <img src="https://example.com/university_logo.png" alt="MATS University Logo" width="200">
+    <header>
+        <img src="https://example.com/university_logo.png" alt="MATS University Logo" width="100">
+        <h1>MATS University Raipur</h1>
+        <p>Leading with Knowledge and Innovation</p>
     </header>
 
     <!-- Navigation Bar -->
-    <nav style="text-align: center; background-color: #333;">
-        <a href="#home" style="color: white; padding: 14px 20px; display: inline-block;">Home</a>
-        <a href="#about" style="color: white; padding: 14px 20px; display: inline-block;">About Us</a>
-        <a href="#academics" style="color: white; padding: 14px 20px; display: inline-block;">Academics</a>
-        <a href="#admissions" style="color: white; padding: 14px 20px; display: inline-block;">Admissions</a>
-        <a href="#contact" style="color: white; padding: 14px 20px; display: inline-block;">Contact</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to MATS University</h1>
+        <p>Your Future Begins Here</p>
+    </div>
+
     <!-- Home Section -->
-    <section id="home" style="padding: 20px;">
+    <section id="home" class="container">
         <h2>Home</h2>
         <p>Welcome to the official website of MATS University, Raipur. Explore our wide range of academic programs, vibrant campus life, and much more.</p>
-        <img src="https://example.com/campus_image.jpg" alt="Campus Image" width="600">
+        <div class="card">
+            <img src="https://example.com/home_image.jpg" alt="Home Image">
+            <h3>Discover Our Campus</h3>
+            <p>Experience the vibrant campus life and state-of-the-art facilities at MATS University.</p>
+        </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" style="padding: 20px; background-color: #f2f2f2;">
+    <section id="about" class="container">
         <h2>About Us</h2>
         <p>MATS University is a premier institution located in Raipur, offering a diverse range of undergraduate and postgraduate programs.</p>
-        <img src="https://example.com/about_us_image.jpg" alt="About Us Image" width="600">
+        <div class="card">
+            <img src="https://example.com/about_us_image.jpg" alt="About Us Image">
+            <h3>Our Mission</h3>
+            <p>To provide quality education and foster innovative research to meet the global challenges.</p>
+        </div>
     </section>
 
     <!-- Academics Section -->
-    <section id="academics" style="padding: 20px;">
+    <section id="academics" class="container">
         <h2>Academics</h2>
         <p>Our academic programs are designed to provide a solid foundation and innovative learning experience.</p>
-        <ul>
-            <li>Engineering</li>
-            <li>Management</li>
-            <li>Science</li>
-            <li>Humanities</li>
-            <li>Law</li>
-        </ul>
-        <img src="https://example.com/academics_image.jpg" alt="Academics Image" width="600">
+        <div class="card">
+            <img src="https://example.com/academics_image.jpg" alt="Academics Image">
+            <h3>Programs Offered</h3>
+            <p>Explore our diverse range of programs in Engineering, Management, Science, Humanities, and Law.</p>
+        </div>
     </section>
 
     <!-- Admissions Section -->
-    <section id="admissions" style="padding: 20px; background-color: #f2f2f2;">
+    <section id="admissions" class="container">
         <h2>Admissions</h2>
         <p>Join MATS University and be part of an institution dedicated to excellence and innovation. Find out about our admissions process and requirements.</p>
-        <img src="https://example.com/admissions_image.jpg" alt="Admissions Image" width="600">
+        <div class="card">
+            <img src="https://example.com/admissions_image.jpg" alt="Admissions Image">
+            <h3>Apply Now</h3>
+            <p>Start your journey with us. Learn about the admission criteria and apply today.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="padding: 20px;">
+    <section id="contact" class="container">
         <h2>Contact Us</h2>
         <p>For more information, feel free to reach out to us through the following contact details:</p>
-        <ul>
-            <li>Email: info@matsuniversity.ac.in</li>
-            <li>Phone: +91 12345 67890</li>
-            <li>Address: MATS University, Raipur, Chhattisgarh, India</li>
-        </ul>
-        <img src="https://example.com/contact_image.jpg" alt="Contact Image" width="600">
+        <div class="card">
+            <img src="https://example.com/contact_image.jpg" alt="Contact Image">
+            <h3>Get in Touch</h3>
+            <p>Email: info@matsuniversity.ac.in<br>
+               Phone: +91 12345 67890<br>
+               Address: MATS University, Raipur, Chhattisgarh, India</p>
+        </div>
     </section>
 
     <!-- Footer Section -->
-    <footer style="text-align: center; background-color: #333; color: white; padding: 10px;">
+    <footer>
         <p>&copy; 2024 MATS University Raipur. All rights reserved.</p>
     </footer>
 
