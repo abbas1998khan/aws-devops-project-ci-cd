@@ -9,124 +9,151 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
+        nav {
+            background-color: #0055A4;
+            overflow: hidden;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
-        section {
-            padding: 20px;
-            margin: 10px 0;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        nav a:hover {
+            background-color: #003366;
         }
-        .hero {
-            background: url('https://www.example.com/college-banner.jpg') no-repeat center center/cover;
-            height: 300px;
+        .banner {
+            background-image: url('college-banner.jpg'); /* Placeholder image */
+            background-size: cover;
+            height: 400px;
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
             text-align: center;
         }
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
+        .banner h1 {
+            font-size: 3em;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
+            padding: 20px;
         }
-        .footer {
-            background: #333;
-            color: #fff;
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            background-color: #0055A4;
+            color: white;
+            padding: 10px;
+        }
+        .section img {
+            max-width: 100%;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
             text-align: center;
             padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <div class="container">
+    <header>
         <h1>MATS University, Raipur</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#faculty">Faculty</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section id="home" class="hero">
-    <div class="container">
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#news">News</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="banner" id="home">
         <h1>Welcome to MATS University</h1>
-        <p>Education for Excellence</p>
     </div>
-</section>
-
-<section id="about" class="container">
-    <h2>About Us</h2>
-    <p>MATS University, located in Raipur, Chhattisgarh, is a premier institution offering a range of undergraduate, postgraduate, and doctoral programs. Established with the mission to provide quality education and foster research, MATS University is a hub for students aspiring to excel in various fields.</p>
-</section>
-
-<section id="courses" class="container">
-    <h2>Courses</h2>
-    <p>We offer a diverse range of courses across multiple disciplines including:</p>
-    <ul>
-        <li>Bachelor of Technology (B.Tech)</li>
-        <li>Master of Business Administration (MBA)</li>
-        <li>Master of Computer Applications (MCA)</li>
-        <li>Doctor of Philosophy (Ph.D.)</li>
-        <li>Bachelor of Science (B.Sc.)</li>
-        <li>Master of Science (M.Sc.)</li>
-        <li>Bachelor of Commerce (B.Com)</li>
-        <li>Master of Arts (M.A.)</li>
-    </ul>
-</section>
-
-<section id="admissions" class="container">
-    <h2>Admissions</h2>
-    <p>Admissions are open for the academic year 2024-2025. Prospective students can apply online or visit our campus for more information. Our admissions process is designed to be straightforward and transparent, ensuring that all eligible candidates have the opportunity to study at MATS University.</p>
-</section>
-
-<section id="faculty" class="container">
-    <h2>Faculty</h2>
-    <p>Our faculty members are experts in their respective fields, bringing a wealth of knowledge and experience to the classroom. They are dedicated to providing high-quality education and mentoring students to achieve their academic and professional goals.</p>
-</section>
-
-<section id="contact" class="container">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need further information, please feel free to contact us:</p>
-    <p>Email: info@matsuniversity.ac.in</p>
-    <p>Phone: +91-123-456-7890</p>
-    <p>Address: MATS University, Arang, Raipur, Chhattisgarh - 493441</p>
-</section>
-
-<footer class="footer">
-    <p>&copy; 2024 MATS University. All rights reserved.</p>
-</footer>
-
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>MATS University, Raipur is a premier educational institution located in Raipur, Chhattisgarh. Our mission is to provide world-class education and foster research, innovation, and excellence. We offer a diverse range of undergraduate, postgraduate, and doctoral programs across various disciplines.</p>
+            <img src="about-us.jpg" alt="About MATS University"> <!-- Placeholder image -->
+        </div>
+        <div class="section" id="departments">
+            <h2>Departments</h2>
+            <p>We have the following departments:</p>
+            <ul>
+                <li>Department of Computer Science</li>
+                <li>Department of Engineering</li>
+                <li>Department of Business Administration</li>
+                <li>Department of Arts and Humanities</li>
+                <li>Department of Science</li>
+                <li>Department of Law</li>
+                <!-- Add more departments as necessary -->
+            </ul>
+        </div>
+        <div class="section" id="admissions">
+            <h2>Admissions</h2>
+            <p>Admissions for the academic year 2024-2025 are now open. Apply now to secure your place at MATS University. We offer a wide range of programs tailored to meet the needs of our diverse student body.</p>
+            <img src="admissions.jpg" alt="Admissions at MATS University"> <!-- Placeholder image -->
+        </div>
+        <div class="section" id="news">
+            <h2>News</h2>
+            <p>Stay updated with the latest news and announcements from MATS University. From academic achievements to campus events, we keep our community informed and engaged.</p>
+            <ul>
+                <li>News Item 1</li>
+                <li>News Item 2</li>
+                <li>News Item 3</li>
+                <!-- Add more news items as necessary -->
+            </ul>
+        </div>
+        <div class="section" id="events">
+            <h2>Events</h2>
+            <p>Join us for upcoming events and activities at MATS University. From seminars to cultural festivals, there is always something happening on campus.</p>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+                <!-- Add more events as necessary -->
+            </ul>
+            <img src="events.jpg" alt="Events at MATS University"> <!-- Placeholder image -->
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to contact us. We are here to assist you.</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 MATS University, Raipur. All rights reserved.</p>
+    </footer>
 </body>
 </html>
